@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Willona_0'; /* Название шрифта */
+    src: url('Fonts/Willona_0.ttf') format('truetype'), /* Путь к файлу шрифта */
+
+    font-weight: normal; /* Нормальный вес шрифта */
+    font-style: normal; /* Нормальный стиль шрифта */
+}
+
+@font-face {
+    font-family: 'Sashaoluu_Uzana'; /* Название шрифта */
+    src: url('Fonts/Sashaoluu_Uzana.otf') format('opentype'), /* Путь к файлу шрифта */
+
+    font-weight: normal; /* Нормальный вес шрифта */
+    font-style: normal; /* Нормальный стиль шрифта */
+}
+
+@font-face {
+    font-family: 'RussianRail G Pro Regular_0'; /* Название шрифта */
+    src: url('Fonts/RussianRail G Pro Regular_0.otf') format('opentype'), /* Путь к файлу шрифта */
+
+    font-weight: normal; /* Нормальный вес шрифта */
+    font-style: normal; /* Нормальный стиль шрифта */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f7fa; /* Светло-голубой фон */
+}
+
+.container {
+    max-width: 1440px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрирование контента */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.film1 {
+    font-family: 'Willona_0', sans-serif; /* Шрифт для первого фильма */
+}
+
+.film2 {
+    font-family: 'Sashaoluu_Uzana', sans-serif; /* Шрифт для второго фильма */
+}
+
+.film3 {
+    font-family: 'RussianRail G Pro Regular_0', sans-serif; /* Шрифт для третьего фильма */
+}
+
+/* Остальные стили остаются без изменений */
+.image-container {
+    display: flex;
+    justify-content: flex-start; /* левое выравнивание */
+    flex-wrap: wrap; /* позволяет изображениям переходить на новую строку */
+}
+
+img {
+    max-width: 30%;
+    margin: 10px;
+    border-radius: 10px; /* Закругленные края */
+}
+
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: black; /* Цвет ссылок черный */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.description-center {
+    text-align: center; /* Выровнять по центру */
+}
+
+.description-justify {
+    text-align: justify; /* Выровнять по ширине */
+}
+
+.description-left {
+    text-align: left; /* Выровнять по левому краю */
+}
+
+.bold {
+    font-weight: bold; /* Используем CSS свойство font-weight */
+}
