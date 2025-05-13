@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Витебск: история города</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="theme-toggle-container">
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</div>
+
+<!-- Первый блок с шапкой -->
+<header class="main-header" id="home">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="#about">О проекте</a></li>
+            <li><a href="#gallery">Фотогалерея</a></li>
+        </ul>
+    </nav>
+    <div class="header-content">
+        <h1>Витебск: путешествие в прошлое</h1>
+        <p>Исследуйте богатую историю одного из древнейших городов Беларуси</p>
+        <a href="#about" class="btn">Узнать больше</a>
+    </div>
+</header>
+
+<!-- О проекте -->
+<section class="about-section" id="about">
+    <div class="container">
+        <h2>О проекте</h2>
+        <p>Добро пожаловать на сайт, посвященный истории Витебска! Здесь вы найдете уникальные материалы о прошлом нашего города, архивные фотографии, интересные факты и рассказы о знаменитых жителях.</p>
+        <p>Витебск - город с богатой историей, первое упоминание о котором относится к 974 году. Наш проект ставит целью сохранить память о важных событиях, архитектурных памятниках и повседневной жизни горожан в разные исторические периоды.</p>
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-text">архивных фотографий</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-text">исторических статей</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">12+</span>
+                <span class="stat-text">лет исследований</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Фотогалерея -->
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <h2>Фотогалерея</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" alt="Витебск в начале XX века">
+                    <div class="carousel-caption">Витебск, 1910 год.</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/avt2.jpg" alt="Витебск в 1920-е годы">
+                    <div class="carousel-caption">Витебск, 1925 год. Площадь Свободы</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Voks53.jpg" alt="Витебск в 1950-е годы">
+                    <div class="carousel-caption">Витебск, 1953 год. Восстановление после войны</div>
+                </div>
+            </div>
+            <button class="carousel-control prev" aria-label="Previous slide">&#10094;</button>
+            <button class="carousel-control next" aria-label="Next slide">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+<!-- Последние статьи -->
+<section class="articles-preview">
+    <div class="container">
+        <h2>Последние статьи</h2>
+        <div class="articles-grid">
+            <article class="article-card">
+                <img src="img/article1.jpg" alt="Витебская ратуша">
+                <h3>Витебская ратуша: символ городского самоуправления</h3>
+                <p>История здания, которое стало визитной карточкой города и свидетелем многих исторических событий.</p>
+                <a href="article.html?id=1" class="read-more">Читать далее</a>
+            </article>
+            <article class="article-card">
+                <img src="img/article2.jpg" alt="Марк Шагал в Витебске">
+                <h3>Марк Шагал и Витебск: любовь на расстоянии</h3>
+                <p>Как родной город влиял на творчество знаменитого художника и почему он так и не вернулся...</p>
+                <a href="article.html?id=2" class="read-more">Читать далее</a>
+            </article>
+            <article class="article-card">
+                <img src="img/article3.jpg" alt="Витебск во время войны">
+                <h3>Витебск в годы Великой Отечественной войны</h3>
+                <p>Трагические страницы истории города: оккупация, сопротивление и восстановление.</p>
+                <a href="article.html?id=3" class="read-more">Читать далее</a>
+            </article>
+        </div>
+        <div class="text-center">
+            <a href="articles.html" class="btn">Все статьи</a>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<footer class="main-footer" id="contacts">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Витебск: история города</h3>
+                <p>Проект, посвященный сохранению исторической памяти о Витебске и его жителях.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><a href="tel:+375212345678"><i class="fas fa-phone"></i> +375 (212) 34-56-78</a></li>
+                    <li><a href="https://www.google.com/maps/place/Ленина+10,+Витебск,+Беларусь" target="_blank"><i class="fas fa-map-marker-alt"></i> г. Витебск, ул. Ленина, 10</a></li>
+                    <li><a href="mailto:history@vitebsk.by"><i class="fas fa-envelope"></i> history@vitebsk.by</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Витебск: история города. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

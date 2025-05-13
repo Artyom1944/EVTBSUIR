@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Витебск: история города</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="theme-toggle-container">
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</div>
+
+<header class="page-header">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+            <li><a href="index.html#about">О проекте</a></li>
+            <li><a href="index.html#gallery">Фотогалерея</a></li>
+        </ul>
+    </nav>
+    <h1>Контакты</h1>
+</header>
+
+<main class="contacts-main">
+    <div class="container">
+        <div class="contacts-grid">
+            <section class="contact-info">
+                <h2>Как с нами связаться</h2>
+                <p>Мы всегда рады вашим вопросам, предложениям и материалам, связанным с историей Витебска. Свяжитесь с нами любым удобным способом.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <a href="https://www.google.com/maps/place/Ленина+10,+Витебск,+Беларусь" target="_blank">г. Витебск, ул. Ленина, 10</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <a href="tel:+375212345678">+375 (212) 34-56-78</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:history@vitebsk.by">history@vitebsk.by</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Часы работы</h3>
+                            <p>Пн-Пт: 9:00 - 18:00<br>Сб: 10:00 - 15:00<br>Вс: выходной</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h3>Мы в социальных сетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link vk"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-map">
+                <h2>Мы на карте</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.692402211841!2d30.20235131585982!3d55.19298098009938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c8c9a6a5a5a5a5%3A0x5a5a5a5a5a5a5a5!2z0YPQuy4g0JvQtdC90LjQvdCwIDEwLCDQktC40YLQvtCx0YDQsCwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sby!4v1620000000000!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <section class="contact-form-section">
+            <h2>Форма обратной связи</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Тема</label>
+                    <select id="subject" name="subject">
+                        <option value="question">Вопрос</option>
+                        <option value="suggestion">Предложение</option>
+                        <option value="material">Исторические материалы</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Витебск: история города</h3>
+                <p>Проект, посвященный сохранению исторической памяти о Витебске и его жителях.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><a href="tel:+375212345678"><i class="fas fa-phone"></i> +375 (212) 34-56-78</a></li>
+                    <li><a href="https://www.google.com/maps/place/Ленина+10,+Витебск,+Беларусь" target="_blank"><i class="fas fa-map-marker-alt"></i> г. Витебск, ул. Ленина, 10</a></li>
+                    <li><a href="mailto:history@vitebsk.by"><i class="fas fa-envelope"></i> history@vitebsk.by</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Витебск: история города. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи о Витебске | Витебск: история города</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="theme-toggle-container">
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+</div>
+
+<header class="page-header">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="articles.html" class="active">Статьи</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="index.html#about">О проекте</a></li>
+            <li><a href="index.html#gallery">Фотогалерея</a></li>
+        </ul>
+    </nav>
+    <h1>Статьи о Витебске</h1>
+</header>
+
+<main class="articles-main">
+    <div class="container">
+        <div class="articles-filter">
+            <button class="filter-btn active" data-filter="all">Все статьи</button>
+            <button class="filter-btn" data-filter="architecture">Архитектура</button>
+            <button class="filter-btn" data-filter="people">Знаменитые люди</button>
+            <button class="filter-btn" data-filter="events">Исторические события</button>
+        </div>
+
+        <div class="articles-list">
+            <!-- Статья 1 -->
+            <article class="article-preview" data-category="architecture">
+                <img src="img/article1.jpg" alt="Витебская ратуша">
+                <div class="article-preview-content">
+                    <span class="article-category">Архитектура</span>
+                    <h2>Витебская ратуша: символ городского самоуправления</h2>
+                    <p class="article-excerpt">История здания, которое стало визитной карточкой города и свидетелем многих исторических событий. Первое упоминание о ратуше в Витебске относится к 1597 году...</p>
+                    <div class="article-meta">
+                        <span class="article-date"><i class="far fa-calendar-alt"></i> 15 марта 2023</span>
+                        <span class="article-author"><i class="far fa-user"></i> Иван Петров</span>
+                    </div>
+                    <a href="article1.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Статья 2 -->
+            <article class="article-preview" data-category="people">
+                <img src="img/article2.jpg" alt="Марк Шагал в Витебске">
+                <div class="article-preview-content">
+                    <span class="article-category">Знаменитые люди</span>
+                    <h2>Марк Шагал и Витебск: любовь на расстоянии</h2>
+                    <p class="article-excerpt">Как родной город влиял на творчество знаменитого художника и почему он так и не вернулся. "Я всегда носил Витебск в себе", - признавался Шагал, прожив большую часть жизни за границей...</p>
+                    <div class="article-meta">
+                        <span class="article-date"><i class="far fa-calendar-alt"></i> 2 февраля 2023</span>
+                        <span class="article-author"><i class="far fa-user"></i> Анна Сидорова</span>
+                    </div>
+                    <a href="article2.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Статья 3 -->
+            <article class="article-preview" data-category="events">
+                <img src="img/article3.jpg" alt="Витебск во время войны">
+                <div class="article-preview-content">
+                    <span class="article-category">Исторические события</span>
+                    <h2>Витебск в годы Великой Отечественной войны</h2>
+                    <p class="article-excerpt">Трагические страницы истории города: оккупация, сопротивление и восстановление. Витебск был оккупирован немецкими войсками 11 июля 1941 года и освобожден только 26 июня 1944 года...</p>
+                    <div class="article-meta">
+                        <span class="article-date"><i class="far fa-calendar-alt"></i> 9 мая 2022</span>
+                        <span class="article-author"><i class="far fa-user"></i> Сергей Иванов</span>
+                    </div>
+                    <a href="article3.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Статья 4 -->
+            <article class="article-preview" data-category="architecture">
+                <img src="img/article4.jpg" alt="Успенский собор">
+                <div class="article-preview-content">
+                    <span class="article-category">Архитектура</span>
+                    <h2>Успенский собор: возрождение из руин</h2>
+                    <p class="article-excerpt">История строительства, разрушения и восстановления главного православного храма Витебска. Первое упоминание о церкви на Успенской горе относится к XV веку...</p>
+                    <div class="article-meta">
+                        <span class="article-date"><i class="far fa-calendar-alt"></i> 28 января 2022</span>
+                        <span class="article-author"><i class="far fa-user"></i> Мария Козлова</span>
+                    </div>
+                    <a href="article4.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Статья 5 -->
+            <article class="article-preview" data-category="people">
+                <img src="img/article5.jpg" alt="Илья Репин в Здравнево">
+                <div class="article-preview-content">
+                    <span class="article-category">Знаменитые люди</span>
+                    <h2>Илья Репин в Здравнево: витебские годы великого художника</h2>
+                    <p class="article-excerpt">В 1892 году Илья Репин приобрел имение Здравнево под Витебском, где провел восемь плодотворных лет. Здесь были созданы такие известные работы, как "Осенний букет", "Белорус" и другие...</p>
+                    <div class="article-meta">
+                        <span class="article-date"><i class="far fa-calendar-alt"></i> 5 августа 2021</span>
+                        <span class="article-author"><i class="far fa-user"></i> Дмитрий Смирнов</span>
+                    </div>
+                    <a href="article5.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+
+            <!-- Статья 6 -->
+            <article class="article-preview" data-category="events">
+                <img src="img/article6.jpg" alt="Славянский базар">
+                <div class="article-preview-content">
+                    <span class="article-category">Исторические события</span>
+                    <h2>Славянский базар: как Витебск стал культурной столицей</h2>
+                    <p class="article-excerpt">История международного фестиваля искусств, который с 1992 года ежегодно проводится в Витебске и привлекает тысячи гостей со всего мира. Как фестиваль изменил город и его имидж...</p>
+                    <div class="article-meta">
+                        <span class="article-date"><i class="far fa-calendar-alt"></i> 10 июля 2021</span>
+                        <span class="article-author"><i class="far fa-user"></i> Елена Кузнецова</span>
+                    </div>
+                    <a href="article6.html" class="read-more">Читать далее</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="pagination">
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">4</a>
+            <a href="#" class="page-link next">Следующая &raquo;</a>
+        </div>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Витебск: история города</h3>
+                <p>Проект, посвященный сохранению исторической памяти о Витебске и его жителях.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><a href="tel:+375212345678"><i class="fas fa-phone"></i> +375 (212) 34-56-78</a></li>
+                    <li><a href="https://www.google.com/maps/place/Ленина+10,+Витебск,+Беларусь" target="_blank"><i class="fas fa-map-marker-alt"></i> г. Витебск, ул. Ленина, 10</a></li>
+                    <li><a href="mailto:history@vitebsk.by"><i class="fas fa-envelope"></i> history@vitebsk.by</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Витебск: история города. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
