@@ -1,0 +1,104 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  padding: 20px;
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  100% { transform: translateX(-5px); }
+}
+
+button {
+  font-size: 20px;
+  background-color: red;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  animation: vibrate 0.1s infinite linear;
+}
+
+button:hover {
+  animation: none;
+  background-color: green;
+}
+
+a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Подчеркивание, появляющееся из центра */
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: green;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: green;
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@keyframes fallBounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(300px); } /* Ускоренное падение */
+  35% { transform: translateY(310px) scaleY(0.7); } /* Деформация при ударе */
+  40% { transform: translateY(250px) scaleY(1); } /* Первый отскок */
+  50% { transform: translateY(300px); } /* Второй удар без деформации */
+  60% { transform: translateY(275px); } /* Второй отскок */
+  70% { transform: translateY(300px); } /* Третий удар */
+  80% { transform: translateY(285px); } /* Третий отскок */
+  90% { transform: translateY(300px); } /* Последний маленький удар */
+  100% { transform: translateY(300px); } /* Остановка */
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  animation: fallBounce 3s ease-in-out infinite;
+}
